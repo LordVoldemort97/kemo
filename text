@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property - LUXURY Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>LUXURY Real Estate</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse Properties</a></li>
+            <li><a href="add.html">Add Property</a></li>
+            <li><a href="property_details.html">Property Details</a></li>
+            <li><a href="contact_popup.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Add a New Property</h2>
+        <form id="property-form" enctype="multipart/form-data">
+            <label for="property-name">Property Name:</label>
+            <input type="text" id="property-name" required>
+
+            <label for="property-price">Price:</label>
+            <input type="number" id="property-price" required>
+
+            <label for="property-description">Description:</label>
+            <textarea id="property-description" required></textarea>
+
+            <label for="property-location">Location:</label>
+            <input type="text" id="property-location" placeholder="Country, City, Governorate, Street, Neighborhood, Postal Code" required>
+
+            <label for="property-images">Upload Images (at least 4):</label>
+            <input type="file" id="property-images" accept="image/*" multiple required>
+
+            <button type="submit" id="submit-btn">Add Property</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 LUXURY Real Estate. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('property-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Handle image uploads
+        const images = [];
+        const input = document.getElementById('property-images');
+        for (let i = 0; i < input.files.length; i++) {
+            images.push(input.files[i]);
+        }
+
+        // You can perform further actions here, such as sending the form data to a server via AJAX
+
+        // Reset the form after submission
+        this.reset();
+
+        alert('Property added successfully!');
+    });
+</script>
+
+</body>
+</html>

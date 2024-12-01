@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Properties - LUXURY Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>LUXURY Real Estate</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Properties</a></li>
+        <li><a href="add.html">Add Property</a></li>
+        <li><a href="property_details.html">Property Details</a></li>
+        <li><a href="contact_popup.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="filter-section">
+        <label for="location-filter">Filter by Location:</label>
+        <select id="location-filter">
+            <option value="all">All</option>
+            <option value="Downtown">Downtown</option>
+            <option value="Countryside">Countryside</option>
+            <option value="Suburbs">Suburbs</option>
+        </select>
+        <button onclick="filterProperties()">Apply Filter</button>
+    </section>
+
+    <section>
+        <h2>Available Properties</h2>
+        <div id="property-list">
+            <div class="property-card" data-location="Downtown">
+                <img src="img/5555.jpg" height="685" width="735" alt="Luxury Apartment in Downtown"/>
+                <h3>Luxury Apartment in Downtown</h3>
+                <p><strong>Location:</strong> Downtown</p>
+                <p><strong>Price:</strong> $1,200,000</p>
+                <p>A beautiful luxury apartment with stunning city views.</p>
+            </div>
+
+            <div class="property-card" data-location="Countryside">
+                <img src="img/666.jpg" height="564" width="564" alt="Cozy Cottage"/>
+                <h3>Cozy Cottage in the Countryside</h3>
+                <p><strong>Location:</strong> Countryside</p>
+                <p><strong>Price:</strong> $450,000</p>
+                <p>A cozy cottage surrounded by nature.</p>
+            </div>
+
+            <div class="property-card" data-location="Suburbs">
+                <img src="img/3d modern luxury real estate house for sale and rent , luxury property concept,.jpg"
+                     height="412" width="735" alt="Modern Villa with Pool"/>
+                <h3>Modern Villa with Pool</h3>
+                <p><strong>Location:</strong> Suburbs</p>
+                <p><strong>Price:</strong> $2,000,000</p>
+                <p>A spacious modern villa with a private pool.</p>
+            </div>
+            <!-- Add more property cards as needed -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 LUXURY Real Estate. All Rights Reserved.</p>
+</footer>
+
+<script src="website.js"></script>
+
+</body>
+</html>

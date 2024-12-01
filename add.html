@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property - LUXURY Real Estate</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS for styling -->
+</head>
+<body>
+<header>
+    <h1>LUXURY Real Estate</h1> <!-- Main header for the page -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse Properties</a></li>
+            <li><a href="add.html">Add Property</a></li>
+            <li><a href="property_details.html">Property Details</a></li>
+            <li><a href="contact_popup.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Add a New Property</h2> <!-- Section heading -->
+        <form id="property-form"> <!-- Form for adding a new property -->
+            <label for="property-name">Property Name:</label>
+            <input type="text" id="property-name" required> <!-- Input for property name -->
+
+            <label for="property-price">Price:</label>
+            <input type="number" id="property-price" required> <!-- Input for property price -->
+
+            <label for="property-description">Description:</label>
+            <textarea id="property-description" required></textarea> <!-- Input for property description -->
+
+            <label for="property-location">Location:</label>
+            <input type="text" id="property-location" required> <!-- Input for property location -->
+
+            <label for="property-image">Upload Image:</label>
+            <input type="file" id="property-image" accept="image/*" required> <!-- Input for image upload -->
+
+            <div id="image-preview" style="margin-top: 10px;"></div> <!-- Div for image preview -->
+
+            <button type="submit" id="submit-btn">Add Property</button> <!-- Submit button -->
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 LUXURY Real Estate. All Rights Reserved.</p> <!-- Footer content -->
+</footer>
+
+<script src="website.js"></script>
+
+</body>
+</html>
